@@ -19,3 +19,14 @@ Be sure your home directory has a `.gitignore_global` file like one of these: [L
 
 ## [Tags](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
 Whenever you deploy code or run a publishable job, tag your code using [semantic versioning](http://semver.org/).
+
+## [Rebase](https://git-scm.com/book/en/v2/Git-Branching-Rebasing)
+
+To update a feature branch so the changes it contains are applied on top of the latest from `origin/master`:
+
+```
+git fetch
+git checkout my-new-feat
+git rebase origin/master
+```
+See [this post](https://blog.algolia.com/master-git-rebase/).
